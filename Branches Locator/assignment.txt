@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using System.IO;
+namespace WindowsApplication40
+{
+    class Class1
+    {
+        string a = @"C:\Branches Locator\Muree.txt";
+        public static string b = null;
+        public void muree()
+        { 
+       
+        if (File.Exists(a))
+        {
+            FileStream fs = null;
+            
+            using (TextReader obj = new StreamReader(a))
+            {
+                b =obj. ReadToEnd();
+                obj.Close();
+
+            }
+        }
+
+        }
+    }
+}
+								
+			Button par 
+Class1.b = textBox1.Text;
+            Class1 obj = new Class1();
+            obj.muree();
